@@ -32,6 +32,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>${quarkus.platform.group-id}</groupId>
+        <artifactId>quarkus-camel-bom</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -62,6 +69,18 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-rest-client</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-jackson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-direct</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-netty-http</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
